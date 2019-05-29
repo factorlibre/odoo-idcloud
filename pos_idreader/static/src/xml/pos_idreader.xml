@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-extend="ProductScreenWidget" >
+        <t t-jquery=".subwindow-container-fix.pads" t-operation="append">
+            <t t-if="widget.pos.config.iface_idreader">
+                <div class="idreader_buttons">
+                    <div style="display:flex;padding:3px 16px 0px 16px;">
+                        <div class="control-button read-rfid-tags" style="width:100%;float:left;margin:0;">
+                            <i class='fa fa-barcode' />
+                            Scan RFID labels
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </t>
+    </t>
+
+    <t t-extend="Orderline">
+        <t t-jquery=".info-list" t-operation="append">
+            <t t-if="line.product_epc !== undefined">
+                <li class="info">
+                    EPC: <t t-esc="line.product_epc" />
+                </li>
+            </t>
+        </t>
+    </t>
+</templates>

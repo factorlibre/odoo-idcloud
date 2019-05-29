@@ -1,0 +1,179 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pos_idreader
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-24 15:12+0000\n"
+"PO-Revision-Date: 2018-07-24 17:16+0200\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#. module: pos_idreader
+#: model:ir.model.fields,field_description:pos_idreader.field_pos_config_iface_idreader
+msgid "!D Reader"
+msgstr "!D Reader"
+
+#. module: pos_idreader
+#: model:ir.ui.view,arch_db:pos_idreader.pos_config_form_view
+msgid "!D Reader Config"
+msgstr "Configuración !D Reader"
+
+#. module: pos_idreader
+#: model:ir.model.fields,field_description:pos_idreader.field_pos_config_idreader_region
+msgid "!D Reader Region"
+msgstr "Región !D Reader"
+
+#. module: pos_idreader
+#: selection:pos.config,idreader_region:0
+msgid "America"
+msgstr "America"
+
+#. module: pos_idreader
+#: selection:pos.config,idreader_region:0
+msgid "Australia"
+msgstr "Australia"
+
+#. module: pos_idreader
+#: selection:pos.config,idreader_region:0
+msgid "Brazil"
+msgstr "Brasil"
+
+#. module: pos_idreader
+#: selection:pos.config,idreader_region:0
+msgid "China"
+msgstr "China"
+
+#. module: pos_idreader
+#. openerp-web
+#: code:addons/pos_idreader/static/src/xml/pos_idreader.xml:17
+#, python-format
+msgid "EPC:"
+msgstr "EPC:"
+
+#. module: pos_idreader
+#: selection:pos.config,idreader_region:0
+msgid "Europe"
+msgstr "Europa"
+
+#. module: pos_idreader
+#: selection:pos.config,idreader_region:0
+msgid "India"
+msgstr "India"
+
+#. module: pos_idreader
+#: selection:pos.config,idreader_region:0
+msgid "Israel"
+msgstr "Israel"
+
+#. module: pos_idreader
+#: selection:pos.config,idreader_region:0
+msgid "Japan"
+msgstr "Japón"
+
+#. module: pos_idreader
+#: selection:pos.config,idreader_region:0
+msgid "Korea"
+msgstr "Korea"
+
+#. module: pos_idreader
+#: model:ir.model,name:pos_idreader.model_pos_order_line
+msgid "Lines of Point of Sale"
+msgstr "Líneas del Terminal Punto de Venta"
+
+#. module: pos_idreader
+#: selection:pos.config,idreader_region:0
+msgid "New Zealand"
+msgstr "Nueva Zelanda"
+
+#. module: pos_idreader
+#: model:ir.model.fields,field_description:pos_idreader.field_pos_config_idreader_output_power
+msgid "Output Power (dBm)"
+msgstr "Potencia de salida (dBm)"
+
+#. module: pos_idreader
+#: selection:pos.config,idreader_region:0
+msgid "Philippines"
+msgstr "Filipinas"
+
+#. module: pos_idreader
+#: code:addons/pos_idreader/models/pos_config.py:53
+#, python-format
+msgid "Please define a proxy that uses the !D Reader interface"
+msgstr "Por favor defina un proxy que utilice la interfaz de !D Reader"
+
+#. module: pos_idreader
+#: model:ir.model.fields,field_description:pos_idreader.field_pos_order_line_product_epc
+msgid "Product EPC"
+msgstr "EPC producto"
+
+#. module: pos_idreader
+#. openerp-web
+#: code:addons/pos_idreader/static/src/js/screens.js:16
+#, python-format
+msgid "RFID Reader is scanning labels"
+msgstr "El lector RFID está escaneando las etiquetas"
+
+#. module: pos_idreader
+#: model:ir.model.fields,field_description:pos_idreader.field_pos_config_idreader_read_time
+msgid "Read Duration (Seconds)"
+msgstr "Duración de lectura (Segundos)"
+
+#. module: pos_idreader
+#: model:ir.model.fields,help:pos_idreader.field_pos_config_iface_idreader
+msgid "Reads RFID tags with !D Reader"
+msgstr "Leer etiquetas RFID con !D Reader"
+
+#. module: pos_idreader
+#: selection:pos.config,idreader_region:0
+msgid "Russia"
+msgstr "Rusia"
+
+#. module: pos_idreader
+#. openerp-web
+#: code:addons/pos_idreader/static/src/xml/pos_idreader.xml:7
+#, python-format
+msgid "Scan RFID labels"
+msgstr "Escanear etiquetas RFID"
+
+#. module: pos_idreader
+#. openerp-web
+#: code:addons/pos_idreader/static/src/js/screens.js:15
+#, python-format
+msgid "Scanning RFID Labels"
+msgstr "Escaneando etiquetas RFID"
+
+#. module: pos_idreader
+#: model:ir.ui.view,arch_db:pos_idreader.pos_config_form_view
+msgid "Set !D Reader Region and output power"
+msgstr "Establecer la región y potencia de salida en !D Reader"
+
+#. module: pos_idreader
+#: code:addons/pos_idreader/models/pos_config.py:40
+#, python-format
+msgid "The output power must be between 0.0 and 36.0 dBm"
+msgstr "La potencia de salida debe estar entre 0 y 36 dBm"
+
+#. module: pos_idreader
+#: selection:pos.config,idreader_region:0
+msgid "Vietnam"
+msgstr "Vietnam"
+
+#. module: pos_idreader
+#: code:addons/pos_idreader/models/pos_config.py:39
+#, python-format
+msgid "Warning!"
+msgstr "Precaución!"
+
+#. module: pos_idreader
+#: model:ir.model,name:pos_idreader.model_pos_config
+msgid "pos.config"
+msgstr "Configuración del TPV"

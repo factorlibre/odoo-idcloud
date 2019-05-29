@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 Hugo Santos <hugo.santos@factorlibre.com>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). -->
+<odoo>
+    <template id="assets" inherit_id="point_of_sale.assets">
+        <xpath expr=".">
+            <script
+                type="text/javascript"
+                src="/pos_idreader/static/src/js/devices.js"/>
+            <script
+                type="text/javascript"
+                src="/pos_idreader/static/src/js/models.js"/>
+            <script
+                type="text/javascript"
+                src="/pos_idreader/static/src/js/screens.js"/>
+        </xpath>
+    </template>
+
+    <template id="assets_backend" name="pos_idreader assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/pos_idreader/static/src/js/client_actions.js"></script>
+        </xpath>
+    </template>
+</odoo>

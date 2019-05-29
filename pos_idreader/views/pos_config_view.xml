@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 Hugo Santos <hugo.santos@factorlibre.com>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). -->
+<odoo>
+    <record id="pos_config_form_view" model="ir.ui.view">
+        <field name="name">pos.config.form</field>
+        <field name="model">pos.config</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_config_form"/>
+        <field name="arch" type="xml">
+            <field name="iface_electronic_scale" position="after">
+                <field name="iface_idreader"/>
+            </field>
+            <xpath expr="//field[@name='iface_electronic_scale']/.." position="after">
+                <group name="idreader_config" string="!D Reader Config" attrs="{'invisible': [('iface_idreader', '=', False)]}">
+                    <field name="idreader_read_time" attrs="{'required': [('iface_idreader', '=', True)]}"/>
+                    <field name="idreader_region" attrs="{'required': [('iface_idreader', '=', True)]}"/>
+                    <field name="idreader_output_power" attrs="{'required': [('iface_idreader', '=', True)]}"/>
+                    <button name="set_idreader_region_output_power"
+                        type="object"
+                        string="Set !D Reader Region and output power"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-extend="ProductScreenWidget" >
+        <t t-jquery=".idreader_buttons" t-operation="append">
+            <div style="display:flex;padding:3px 16px 0px 16px;">
+                <div class="control-button" id="read_rfid_return_tags" style="width:100%;float:left;margin:0;">
+                    <i class='fa fa-barcode' />
+                    Return Order: RFID Read
+                </div>
+            </div>
+        </t>
+    </t>
+</templates>
